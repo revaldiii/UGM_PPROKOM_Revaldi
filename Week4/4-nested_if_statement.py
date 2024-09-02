@@ -1,15 +1,16 @@
 jenis_kelamin = str(input("Jenis kelamin = "))
-umur = int(input("Umur = "))
 
-if jenis_kelamin.lower() == 'pria':
+if jenis_kelamin.lower() in ['pria', "laki laki", "cowok"]:
+    umur = int(input("Umur = "))
     if (umur >= 25):
-        print ("Pria boleh menikah")
+        print (str(jenis_kelamin), " boleh menikah")
     else:
-        print ("Pria tidak boleh menikah")
-elif jenis_kelamin.lower() == 'wanita':
+        print (str(jenis_kelamin), " boleh menikah")
+elif jenis_kelamin.lower() in ['wanita', "perempuan", "cewek"] :
+    umur = int(input("Umur = "))
     if (umur >= 20):
-        print ("Wanita boleh menikah")
+        print (str(jenis_kelamin), " boleh menikah")
     else:
-        print ("Wanita tidak boleh menikah")
+        print (str(jenis_kelamin), " tidak boleh menikah")
 else:
     print ("Jenis kelamin anda tidak terdaftar") 
