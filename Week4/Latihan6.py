@@ -5,15 +5,15 @@ def main():
     pilihan = ["batu", "gunting", "kertas"]
 
     # Menampilkan output berupa isntruksi
-    print("Halo! Mari kita mainkan Batu, Gunting, Kertas.")
-    print("Anda bisa memilih: batu, gunting, atau kertas.")
+    print("EEYYOO! main permainan Batu, Gunting, Kertas, yukk!.")
+    print("Pilihannya ada batu, gunting, atau kertas.")
 
     # Pilihan pemain
-    pemain = input("Masukkan pilihan Anda: ").strip().lower()
+    pemain = input("Masukkan pilihanmu : ").strip().lower()
 
     # Validasi input pemain
     if pemain not in pilihan:
-        print("Pilihan yang Anda masukkan tidak valid. Pilih antara batu, gunting, atau kertas.")
+        print("Pilihan yang kamu masukkan tidak valid brow!. Pilih antara batu, gunting, atau kertas.")
         return  # Menghentikan program jika input tidak valid
 
     # Pilihan acak dari komputer
@@ -26,9 +26,9 @@ def main():
     elif (pemain == "batu" and komputer == "gunting") or \
          (pemain == "gunting" and komputer == "kertas") or \
          (pemain == "kertas" and komputer == "batu"):
-        hasil = "Anda menang!"
+        hasil = "Widiiihh! Selamat kamu menang!"
     else:
-        hasil = "Komputer menang!"
+        hasil = "Yahhh! Komputer menang!"
 
     # Menampilkan hasil 
     print(hasil)
