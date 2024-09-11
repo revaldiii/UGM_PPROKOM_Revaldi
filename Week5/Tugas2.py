@@ -1,33 +1,33 @@
-awal = int(input("Masukan saldo awal\t: "))
-sisa = awal  # Bila tidak ada pengeluaran
+awal = int(input("Masukan jumlah saldo awal kamu\t: "))
+sisa = awal  # Jika tidak memiliki pengeluaran
 
 while True:
-    pengeluaran = int(input("Masukan pengeluaran hari ini (-1 untuk keluar): "))
+    pengeluaran = int(input("Jumlah pengeluaran hari ini (Ketik 0 jika ingin keluar): "))
 
-    if pengeluaran == -1:  # Untuk berhenti
-        print("Sisa saldo =", sisa)  # Sisa bila di berhentikan
+    if pengeluaran == 0:  # Untuk berhenti
+        print("Sisa saldo kamu =", sisa)  # Menampilkan sisa saldo jika di berhentikan
         break
 
-    # Cek jika pengeluaran lebih besar dari sisa saldo
+    # Periksa apabila pengeluaran lebih besar dari sisa saldo
     while pengeluaran > sisa:
-        print("Saldo tidak cukup")
-        print("Sisa saldo", sisa)
-        pengeluaran = int(input("Masukan pengeluaran yang valid (-1 untuk keluar): "))
-        if pengeluaran == -1:  # Untuk berhenti jika pengguna memutuskan
-            print("Sisa saldo =", sisa)  # Sisa bila di berhentikan
+        print("Saldo kamu tidak cukup")
+        print("Sisa saldo kamu", sisa)
+        pengeluaran = int(input("Masukan pengeluaran yang valid dong(Ketik 0 jika ingin keluar): "))
+        if pengeluaran == 0:  # Untuk berhenti jika pengguna memutuskan
+            print("Sisa saldo kamu =", sisa)  # Sisa saldo jika di berhentikan
             break
         if pengeluaran <= sisa:
             break  # Keluar dari loop saat pengeluaran valid
 
-    if pengeluaran == -1:  # Cek lagi setelah keluar dari loop jika saldo cukup
+    if pengeluaran == 0:  # Cek lagi setelah keluar dari loop jika saldo cukup
         break
 
     sisa -= pengeluaran
 
-    # Tampilkan sisa saldo setelah pengeluaran
-    print("Sisa saldo setelah pengeluaran:", sisa)
+    # Menampilkan sisa saldo setelah pengeluaran
+    print("Sisa saldo kamu setelah pengeluaran:", sisa)
     
     # Jika saldo habis, program berhenti
     if sisa == 0:
-        print("Saldo habis.")
+        print("Maaf, saldo kamu sudah habis.")
         break
