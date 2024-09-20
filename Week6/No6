@@ -1,0 +1,10 @@
+#program fungsi difference (selisih)
+
+A = {'a', 'b', 'c', 'd'}
+B = {'c', 'd', 'e' }
+C = set()
+
+print("a. A difference B:", A-B)
+print("b. B difference A:", B-A)
+print("c. A difference C:", A-C)
+print("d. B difference C:", B-C)
