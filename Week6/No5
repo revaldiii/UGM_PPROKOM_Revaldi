@@ -3,10 +3,7 @@ A = {'a', 'b', 'c', 'd'}
 B = {'c', 'd', 'e' }
 C = set()
 
-print("a. A symmetric difference B:", A^B)
-print("b. B symmetric difference A:", B^A)
-print("c. A symmetric difference C:", A^C)
-print("d. B symmetric difference C", B^C)
-
-
-
+print("A symmetric difference B:", A^B, "\n")
+print("B symmetric difference A:", B^A, "\n")
+print("A symmetric difference C:", A^C, "\n")
+print("B symmetric difference C", B^C, "\n")
