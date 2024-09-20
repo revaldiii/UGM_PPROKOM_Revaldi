@@ -1,15 +1,18 @@
-#PROGRAM IRISAN
+#Program Irisan
+
 A = {100, 7, 8}
 B = {200, 4, 5}
 C = {300, 2, 3}
 D = {100, 200, 300}
 
 AinterD = A.intersection (D)
-BinterD = B.intersection (D)
-CinterD = C.intersection (D)
-AinterBinterCinterD = A.intersection (B, C, D)
+print("A∩D:", AinterD)
 
-print("A∩D:", AinterD,)
+BinterD = B.intersection (D)
 print("B∩D:", BinterD)
+
+CinterD = C.intersection (D)
 print("C∩D:", CinterD)
+
+AinterBinterCinterD = A.intersection (B, C, D)
 print("A∩B∩C∩D:", AinterBinterCinterD)
