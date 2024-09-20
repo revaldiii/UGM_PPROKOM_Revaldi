@@ -1,4 +1,5 @@
-#PROGRAM KOMPLEMEN
+#Pogram Komplemen
+
 A = {'a', 'b', 'c', 'd'}
 B = {'c', 'd', 'e' }
 C = set({})
