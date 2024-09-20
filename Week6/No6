@@ -1,8 +1,8 @@
-#program fungsi difference (selisih)
+#Program Fungsi Difference (selisih)
 
 A = {'a', 'b', 'c', 'd'}
 B = {'c', 'd', 'e' }
-C = set()
+C = set({})
 
 print("a. A difference B:", A-B)
 print("b. B difference A:", B-A)
