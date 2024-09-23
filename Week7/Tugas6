@@ -3,5 +3,5 @@ del dict['Name'] # hapus entri dengan key 'Name'
 dict.clear()
 del dict
 
-print ("dict['Age']: ", dict['Age'])
-print ("dict['School']: ", dict['School'])
+print ("Umur :", dict['Age'])
+print ("Sekolah :", dict['School'])
