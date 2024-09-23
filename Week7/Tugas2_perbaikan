@@ -1,0 +1,15 @@
+# Mendefinisikan dictionary
+student = {
+    "nama": "faqih",
+    "umur": 26,
+    "tinggi": 177.6
+}
+
+# Mencetak informasi siswa
+print(student)
+
+# Menambahkan hobi ke dalam dictionary
+student["hobi"] = "coding"
+
+# Mencetak informasi siswa setelah penambahan
+print(student)
