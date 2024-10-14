@@ -1,0 +1,39 @@
+# Program sederhana untuk penjumlahan dan rata-rata nilai menggunakan array
+
+# Langkah a: Mendeklarasikan array dengan 5 elemen
+angka = []
+
+# Langkah b: Menggunakan perulangan untuk meminta pengguna memasukkan 5 angka
+for i in range(5):
+    while True:
+        try:
+            # Meminta pengguna untuk memasukkan angka desimal
+            num = float(input(f"Masukkan angka ke-{i + 1} (desimal): "))
+            angka.append(num)
+            break  # Keluar dari loop jika input valid
+        except ValueError:
+            print("Input tidak valid. Harap masukkan angka desimal.")
+
+    # Langkah c: Cetak list angka yang telah dimasukkan
+    print(f"Angka yang telah dimasukkan sejauh ini: {angka}")
+
+# Langkah d: Menghitung jumlah total data
+total_data = len(angka)
+
+# Langkah e: Memberikan opsi kepada pengguna
+while True:
+    pilihan = input("\nApakah Anda ingin melihat 'jumlah' atau 'rata-rata'? ").lower()
+
+    if pilihan == "jumlah":
+        # Jika pengguna memilih "jumlah", cetak jumlah total angka
+        total_angka = sum(angka)
+        print(f"Jumlah total angka yang dimasukkan adalah: {total_angka}")
+        break
+    elif pilihan == "rata-rata":
+        # Jika pengguna memilih "rata-rata", hitung dan cetak rata-rata angka
+        rata_rata = sum(angka) / total_data
+        print(f"Rata-rata dari angka yang dimasukkan adalah: {rata_rata}")
+        break
+    else:
+        # Jika input pengguna tidak sesuai, tampilkan pesan kesalahan
+        print("Input tidak valid. Harap pilih 'jumlah' atau 'rata-rata'.")
