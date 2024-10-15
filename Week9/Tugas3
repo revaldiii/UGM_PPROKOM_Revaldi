@@ -1,0 +1,25 @@
+from array import array
+
+# Memeriksa apakah sebuah angka adalah bilangan prima
+def bilangan_prima(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1): 
+        if n % i == 0:
+            return False
+    return True
+
+# Mendeklarasikan array dengan nilai awal
+angka = array('i', [4, 5, 11, 12, 14, 16, 16, 19])
+
+# Array untuk menyimpan bilangan prima
+prima = array('i', [])
+
+# Mencari bilangan prima dalam array
+for num in angka:
+    if bilangan_prima(num):
+        prima.append(num)
+
+# Output array
+print(f"Bilangan prima dalam array: {list(prima)}")
+print(f"Jumlah bilangan prima: {len(prima)}")
