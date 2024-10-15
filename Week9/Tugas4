@@ -1,20 +1,21 @@
-# Meminta input jumlah elemen
-n = int(input("Masukkan jumlah elemen dalam array: "))
+import array
 
-# Membuat array otomatis dari 1 sampai n
-data_array = list(range(1, n + 1))
+# Meminta input jumlah elemen
+bilangan = int(input("Masukkan jumlah elemen dalam array: "))
+
+data_array = array.array('i', range(1, bilangan + 1))
 
 # Menampilkan array
-print("Data Array:", data_array)
+print("Data Array:", data_array.tolist())  
 
 # Meminta input bilangan untuk mencari kelipatan
 kelipatan = int(input("Masukkan kelipatan yang ingin ditampilkan: "))
 
 # Mencari elemen-elemen yang merupakan kelipatan
-hasil_kelipatan = [x for x in data_array if x % kelipatan == 0]
+hasil_kelipatan = array.array('i', [x for x in data_array if x % kelipatan == 0])
 
 # Menampilkan hasil
-if hasil_kelipatan:
-    print(f"Elemen yang merupakan kelipatan dari {kelipatan}: {hasil_kelipatan}")
+if len(hasil_kelipatan) > 0:
+    print(f"Elemen yang merupakan kelipatan dari {kelipatan}: {hasil_kelipatan.tolist()}")
 else:
     print(f"Tidak ada elemen yang merupakan kelipatan dari {kelipatan}.")
