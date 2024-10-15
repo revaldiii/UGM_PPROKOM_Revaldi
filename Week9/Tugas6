@@ -1,0 +1,20 @@
+import array
+
+# Daftar angka yang diberikan
+angka = sorted([1, 5, 4, 6, 7, 12, 45, 9, 99, 55, 100, 88, 75, 60])
+
+# Mengubah list menjadi array
+data_array = array.array('i', angka)
+
+# Memisahkan angka genap dan ganjil
+angka_genap = array.array('i', [x for x in data_array if x % 2 == 0])
+angka_ganjil = array.array('i', [x for x in data_array if x % 2 != 0])
+
+# Menampilkan hasil
+print(data_array.tolist())
+
+print(f"Angka genap             : {angka_genap.tolist()}")
+print(f"Jumlah angka genap      : {len(angka_genap)} angka")
+
+print(f"Angka ganjil            : {angka_ganjil.tolist()}")
+print(f"Jumlah angka ganjil     : {len(angka_ganjil)} angka")
