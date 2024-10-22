@@ -23,5 +23,5 @@ if __name__ == "__main__":
     transpose = matrix_transpose(matrix)
     
     # Menampilkan hasil
-    for r in transposed:
+    for r in transpose:
         print(r.tolist()) 
