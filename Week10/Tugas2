@@ -1,14 +1,12 @@
 import numpy as np
 
-# Inisialisasi array 2x3 kosong
 matrix = np.zeros((2, 3), dtype=int)
 
-# Mengisi array dengan input dari pengguna
+# Meminta input dari pengguna untuk mengisi array
 for i in range(2):
     for j in range(3):
         value = int(input(f"Masukkan nilai ke-[{i}][{j}] "))
         matrix[i][j] = value
 
-# Menampilkan array
 print("-" * 10)
 print(matrix)
