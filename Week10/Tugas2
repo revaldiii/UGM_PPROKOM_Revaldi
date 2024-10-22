@@ -5,8 +5,8 @@ matrix = np.zeros((2, 3), dtype=int)
 # Meminta input dari pengguna untuk mengisi array
 for i in range(2):
     for j in range(3):
-        value = int(input(f"Masukkan nilai ke-[{i}][{j}] "))
-        matrix[i][j] = value
+        nilai = int(input(f"Masukkan nilai ke-[{i}][{j}] "))
+        matrix[i][j] = nilai
 
 print("-" * 10)
 print(matrix)
