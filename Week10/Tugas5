@@ -1,0 +1,18 @@
+import array
+
+# Inisialisasi array 2 dimensi 4x2
+matrix = [
+    array.array('i', [10, 11]),
+    array.array('i', [12, 13]),
+    array.array('i', [14, 15]),
+    array.array('i', [16, 17])
+]
+
+# List kosong untuk menyimpan elemen  kolom pertama
+kolom_pertama = []
+
+for row in matrix:
+    kolom_pertama.append(row[0])
+
+# Output program
+print(kolom_pertama)
