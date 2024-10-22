@@ -1,0 +1,22 @@
+import array
+
+daftar = [
+    array.array('i', [10, 15, 20]),
+    array.array('i', [25, 30, 35]),
+    array.array('i', [40, 45, 50])
+]
+
+# Variabel  menyimpan jumlah bilangan genap dan ganjil
+genap = 0
+ganjil = 0
+
+for sub_array in daftar:
+    for elemen in sub_array:
+        if elemen % 2 == 0:
+            genap += 1
+        else:
+            ganjil += 1
+
+# Output program
+print(f"Jumlah elemen genap adalah {genap}")
+print(f"Jumlah elemen ganjil adalah {ganjil}")
