@@ -1,0 +1,42 @@
+import array
+
+# Inisialisasi dua array multidimensi
+array1 = [
+    array.array('i', [4, 6]),
+    array.array('i', [1, 7])
+]
+
+array2 = [
+    array.array('i', [2, 3]),
+    array.array('i', [5, 6])
+]
+
+# Fungsi untuk penjumlahan
+def penjumlahan(arr1, arr2):
+    result = []
+    for i in range(len(arr1)):
+        result.append(array.array('i', [arr1[i][j] + arr2[i][j] for j in range(len(arr1[0]))]))
+    return result
+
+# Fungsi untuk pengurangan
+def pengurangan(arr1, arr2):
+    result = []
+    for i in range(len(arr1)):
+        result.append(array.array('i', [arr1[i][j] - arr2[i][j] for j in range(len(arr1[0]))]))
+    return result
+
+# Hasil penjumlahan
+hasil_penjumlahan = penjumlahan(array1, array2)
+
+# Hasil pengurangan
+hasil_pengurangan = pengurangan(array1, array2)
+
+# Output hasil penjumlahan
+print("Hasil penjumlahan adalah :")
+for row in hasil_penjumlahan:
+    print(row.tolist())
+
+# Output hasil pengurangan
+print("\nHasil pengurangan adalah :")
+for row in hasil_pengurangan:
+    print(row.tolist())
