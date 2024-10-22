@@ -1,0 +1,27 @@
+import array
+
+# Fungsi untuk melakukan transpose matriks
+def matrix_transpose(X):
+    hasil = [array.array('i', [0 for _ in range(len(X))]) for _ in range(len(X[0]))]
+
+    # Iterasi melalui baris
+    for i in range(len(X)):
+        # Iterasi melalui kolom
+        for j in range(len(X[0])):
+            hasil[j][i] = X[i][j]
+    
+    return hasil
+
+if __name__ == "__main__":
+    matrix = [
+        array.array('i', [1, 2, 3]),
+        array.array('i', [4, 5, 6]),
+        array.array('i', [7, 8, 9])
+    ]
+    
+    # Menghitung transpose
+    transpose = matrix_transpose(matrix)
+    
+    # Menampilkan hasil
+    for r in transposed:
+        print(r.tolist()) 
