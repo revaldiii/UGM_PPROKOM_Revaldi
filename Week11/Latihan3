@@ -50,7 +50,7 @@ def show_menu(): # fungsi untuk menampilkan menu
     elif menu == 5:
         exit()
     else:
-    print ("Salah pilih!")
+        print ("Salah pilih!")
 
 if __name__ == "__main__":
     while(True):
